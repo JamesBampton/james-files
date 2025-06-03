@@ -10,12 +10,15 @@
     <h3>EMAIL:james.bampton@email.com</h3>
     <h3>PHONE:123-456-7890</h3>
     <h3>ADDRESS:1 Fratton Park, Pompey, UK</h3>
-    <a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#bio>Biography</a><br>
-    <a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#Education>Education</a><br>
-    <a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#Sports>Sports</a><br>
-    <a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#Music>Music</a><br>
-    <a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#Portfolio>Portfolio</a><br><br>
-    <a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href="http://www.linkedin.com/in/james-bampton-1821053" target="_blank">LinkedIn Profile</a>
+    <ul>
+    <li></li><a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#bio>Biography</a></li>
+    <li></li><a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#Education>Education</a></li>
+    <li></li><a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#Sports>Sports</a></li>
+    <li></li><a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#Music>Music</a></li>
+    <li></li><a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#Portfolio>Portfolio</a></li>
+    <li></li><a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href=#Contact>Contact</a></li>
+    <li></li><a style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"href="http://www.linkedin.com/in/james-bampton-1821053" target="_blank">LinkedIn Profile</a></li>
+    </ul>
     <br>
     <hr>
     <h2>ABOUT ME</h2>
@@ -45,5 +48,34 @@
         <h3>PORTFOLIO</h3>
         <a href="http://www.themender.co.uk" target="_blank">The Mender</a>
         <p>My portfolio website where I showcase my projects and skills.</p>
+
+    <div id="Contact">
+        <h3>CONTACT</h3>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="severity">Choose problem severity:</label>
+            <select id="severity" name="severity">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <br><br>
+
+            
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to regular annoying phone calls</label><br><br> 
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+
+            
+            <input type="submit" value="Submit">
+        </form>
 </body>
 </html>
