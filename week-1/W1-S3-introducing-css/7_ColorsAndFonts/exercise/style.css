@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #a5eed0;
     margin: 20px;
     padding: 0;
 }
@@ -10,15 +10,16 @@ body {
 header {
     text-align: center;
     margin-bottom: 20px;
+    background-color: #0c3c52;
 }
 
 header h1 {
-    color: #333;
+    color: #ffff;
 }
 
 header p {
     font-size: 18px;
-    color: #666;
+    color: #ffff;
 }
 
 /* Exercise Box Styles */
@@ -26,7 +27,7 @@ header p {
     width: 80%;
     padding: 20px;
     margin: 20px auto;
-    border: 2px dashed #333;
+    border: 10px dashed #333;
     text-align: center;
     background-color: #ffffff;
     /* Default background color */
@@ -50,17 +51,19 @@ header p {
     font-family: Arial, sans-serif;
     /* Default font */
 
-    background-color: lightblue;
+    background-color: rgb(195, 220, 228);
     font-family: Arial, Helvetica, sans-serif;
 }
 .exercise-box p {
     margin: 0;
     font-size: 16px;
+    border: 10px
 }
 
 #box-1 {
     background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
+    border: 3px dashed #333;
     /* Yellow */
 }
 

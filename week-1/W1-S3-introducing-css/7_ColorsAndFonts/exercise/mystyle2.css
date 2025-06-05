@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080808;
+    margin: 20px;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #0c3c52;
+    border: 3px solid #ffff
+}
+
+header h1 {
+    color: #ffff;
+    padding-top: 8px
+}
+
+header p {
+    font-size: 18px;
+    color: #d3c8b2;
+    padding-bottom:8px
+}
+
+/* Exercise Box Styles */
+.exercise-box {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+    border: 3px solid #faf8f8;
+    text-align: center;
+    background-color: #ffffff; /* Default background color */
+    font-family: Arial, sans-serif; /* Default font */
+    height: 60px
+}
+
+#box-1 {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+
+.box-2 {
+    background-color: rgb(99, 235, 155);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    border: 2px dashed #333;
+    font-size: 12px;
+}
+
+.box-3 {
+    background-color: #e7aba1;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+.box-4 {
+    background-color: #f3d88e;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    border: 2px dashed #333;
+    font-size: 12px;
+}
+
+.box-5 {
+    background-color: #d392c8;
+    font-family: 'Georgia', serif;
+    width: 40%;
+}
+
+.box-6 {
+    background-color: #ffe4e1;
+    font-family: 'Verdana', sans-serif;
+    width: 30%;
+    border: 2px dashed #333;
+    font-size: 12px;
+}
