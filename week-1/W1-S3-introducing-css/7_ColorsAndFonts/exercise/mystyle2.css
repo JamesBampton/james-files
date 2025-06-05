@@ -25,7 +25,7 @@ header p {
     padding-bottom:8px
 }
 
-/* Exercise Box Styles */
+/* Exercise Box Styles, global box style for all section elements*/
 .exercise-box {
     width: 90%;
     padding: 20px;
@@ -37,44 +37,55 @@ header p {
     height: 60px
 }
 
+/* Specific Box Styles for id selector for box-1*/
 #box-1 {
     background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     width: 80%;
 }
-
+/* Specific Box Styles for class selector for box2 */
 .box-2 {
     background-color: rgb(99, 235, 155);
     font-family: Arial, Helvetica, sans-serif;
     width: 70%;
     border: 2px dashed #333;
-    font-size: 12px;
+    font-size: 12px; /*Change font size for box-2*/
 }
-
+/* Specific Box Styles for class selector for box-3 */
 .box-3 {
     background-color: #e7aba1;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace; /*change font for box-3*/
     width: 60%;
 }
-
+/* Specific Box Styles for class selector for box-4 */
 .box-4 {
     background-color: #f3d88e;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;  /*change font for box-4*/
     width: 50%;
     border: 2px dashed #333;
-    font-size: 12px;
+    font-size: 12px; /*Change font size for box-4*/
 }
-
+/* Specific Box Styles for for class and hover selector on box-4 */
+.box-4:hover {
+    font-size: 16px;
+    cursor: pointer
+}
+/* Specific Box Styles for class selector for box-5 */
 .box-5 {
     background-color: #d392c8;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif;  /*change font for box-5*/
     width: 40%;
 }
-
+/* Specific Box Styles for class selector for box-6 */
 .box-6 {
     background-color: #ffe4e1;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Verdana', sans-serif;  /*change font for box-6*/
     width: 30%;
     border: 2px dashed #333;
-    font-size: 12px;
+    font-size: 12px; /*Change font size for box-6*/
+}
+/* Specific Box Styles for class and hover selector on box-6 */
+.box-6:hover {
+    border: 8px dashed #3874cf;
+    cursor: pointer
 }
