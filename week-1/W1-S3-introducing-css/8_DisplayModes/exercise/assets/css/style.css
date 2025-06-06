@@ -23,9 +23,18 @@ footer {
 
 /* Items are currently stacked vertically */
 .item {
-    display: inline-block; /* Changed */
-    padding-left: 0px;
+    display: inline; /* Changed */
+    padding-left: 10px;
     background-color: lightgreen;
-    margin: 2px;
-    width: 48%
+    margin: 5px;
+    /*width: 49%*/
+}
+
+.item2 {
+    display: block; /* Changed */
+    padding-left: 10px;
+    background-color: rgb(194, 32, 54);
+    margin: 5px;
+    color: #ffffff
+    /*width: 49%*/
 }
