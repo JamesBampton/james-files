@@ -78,6 +78,7 @@ body {
     width: 30%;
     text-align: center;
     border: 1px solid #ccc;
+    z-index: 10
 }
 
 .action-box:hover {
@@ -100,12 +101,16 @@ footer {
     /* but we want it to be fixed to the viewport */
     bottom: 20px;
     right: 20px;
+    z-index: 9;
     /* TODO need to fix this to bottom and right */
 }
 
 .get-in-touch img {
     width: 150px;
     height: auto;
+    border: 1px solid #d8c7c7;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* TASK 1: Make the navigation sticky at the top */
