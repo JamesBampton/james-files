@@ -60,12 +60,12 @@ button:hover {
 /* Pseudo-elements for Email and Phone Labels */
 /* Add ✉️ and 📞 icons before the labels */
 .email-label::before {
-    content: "✉️";
+    content: "✉️"; /* Unicode for envelope emoji  "\1F4DE"*/
     margin-right: 5px;
 }
 
 .phone-label::before {
-    content: "📞";
+    content: "\1F4DE"; /* Unicode for telephone emoji */
     margin-right: 5px;
 }
 

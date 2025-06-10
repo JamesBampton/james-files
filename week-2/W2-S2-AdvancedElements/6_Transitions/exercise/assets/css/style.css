@@ -78,16 +78,7 @@ img {
 
 /* Scale transformation */
 .pop:hover {
-    transform: scale(1.2) translate(20px, 20px);
-    /* Enlarge the box */
-    background-color: #b7c5d3;
-    /* Change color */
-    transition: 0.9s ease;
-
-}
-/* Scale transformation */
-.pop1:hover {
-    transform: scale(1.2) translate(20px, 30px);
+    transform: scale(1.2) rotate(-15deg);
     /* Enlarge the box */
     background-color: #b7c5d3;
     /* Change color */
@@ -95,41 +86,29 @@ img {
 
 }
 
-/* Scale transformation */
 .pop2:hover {
-    transform: scale(1.2) translate(30px, 30px);
+    transform: scale(1.2) rotate(15deg);
     /* Enlarge the box */
-    background-color: #b7c5d3;
+    background-color: #1263b4;
     /* Change color */
     transition: 0.9s ease;
 
 }
 
-/* Scale transformation */
 .pop3:hover {
-    transform: scale(1.2) translate(30px, 30px);
+    transform: scale(1.2) rotate(-15deg);
     /* Enlarge the box */
-    background-color: #b7c5d3;
+    background-color: #e68517;
     /* Change color */
     transition: 0.9s ease;
 
 }
 
+.pop4:hover {
+    transform: scale(1.2) rotate(15deg);
+    /* Enlarge the box */
+    background-color: #1263b4;
+    /* Change color */
+    transition: 0.9s ease;
 
-#pop{
-
-    transition: transfomr 0.5s ease;
-}
-
-#pop1{
-
-    transition: transfomr 0.5s ease;
-}
-#pop2{
-
-    transition: transfomr 0.5s ease;
-}
-#pop3{
-
-    transition: transfomr 0.5s ease;
 }
