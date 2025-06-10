@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-
+<body class="dark-mode">
     <!-- Navigation Bar -->
     <nav>
         <ul>
@@ -22,7 +21,13 @@
 
     <!-- Header Section -->
     <header>
+        <!-- Rectangular switch -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
         <h1>Welcome to Pedro's Pizza</h1>
+        <br>
         <img src="./assets/images/pizza.jpg" alt="Delicious Pizza" class="header-image">
     </header>
 
@@ -33,15 +38,77 @@
                 <h2>Our Range</h2>
                 <p>Explore our delicious range of pizzas, made with the freshest ingredients!</p>
             </a>
+            <button id="myButton" onclick="changeText1()" class="range">Click Me to Win</button>
         </div>
         <div class="box order">
             <a href="#" class="option">
-                <h2>Order Online</h2>
+                <h2 id="box-back">Order Online</h2>
                 <p>Get your favorite pizza delivered straight to your door!</p>
             </a>
+            <button id="myButton2" onclick="changeText1()" class="order">Click Me to Win</button>
         </div>
     </section>
-
 </body>
+
+<!-- <script>
+    const button = document.getElementById('myButton');
+    /*const buttontext = document.getElementById('button');*/
+    button.addEventListener('click', () => {
+        button.textContent = "Click Me to Win";
+        button2.textContent = "No Click Me to Win";
+    });
+</script>
+
+<script>
+    const button2 = document.getElementById('myButton2');
+    /*const buttontext2 = document.getElementById('button');*/
+    button2.addEventListener('click', () => {
+        button2.textContent = "Click Me to Win";
+        button.textContent = "No Click Me to Win";
+    });
+</script> -->
+
+<!-- <script>
+
+    function changeText1() {
+        const button = document.getElementById("myButton");
+        const button2 = document.getElementById("myButton2");
+        if (button.textContent === "Click Me to Win") {
+            button.textContent = "You Lost!";
+            button2.textContent = "Try me!";
+        }
+
+    }
+</script>
+
+<script>
+    function changeText2() {
+        const button = document.getElementById("myButton");
+        const button2 = document.getElementById("myButton2");
+        if (button2.textContent === "Try me!") {
+            button2.textContent = "You Lost!";
+            button.textContent = "Click Me to Win";
+        }
+    }
+
+</script> -->
+
+<script>
+
+    function changeText1() {
+        const button = document.getElementById("myButton");
+        const button2 = document.getElementById("myButton2");
+        if (button.textContent === "Click Me to Win") {
+            button.textContent = "You Lost!";
+            button2.textContent = "Try me!";
+        }
+        else if (button2.textContent === "Try me!") {
+            button2.textContent = "You Lost!";
+            button.textContent = "Click Me to Win";
+        }
+    }
+
+</script>
+
 
 </html>
