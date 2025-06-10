@@ -76,6 +76,7 @@ button:hover {
     font-size: 14px;
     }
 
+/* Hover state for the link */
 a:hover {
     color: #1a17eb;
     text-decoration: none;
