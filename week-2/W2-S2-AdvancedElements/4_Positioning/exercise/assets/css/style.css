@@ -38,6 +38,10 @@ body {
     font-weight: bold;
 }
 
+.main-nav ul li a:hover {
+    color: rgb(180, 216, 50);
+}
+
 /* Header */
 .main-header {
     text-align: center;
@@ -112,6 +116,8 @@ footer {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* TASK 1: Make the navigation sticky at the top */
 /* TASK 2: Fix the "Get in Touch" button in the bottom-right */
