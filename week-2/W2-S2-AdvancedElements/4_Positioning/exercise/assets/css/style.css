@@ -19,6 +19,7 @@ body {
     background-color: #333;
     color: white;
     padding: 10px 0;
+    position:sticky;
 }
 
 .main-nav ul {
@@ -93,10 +94,13 @@ footer {
 
 /* Get in Touch (incorrect position) */
 .get-in-touch {
+    position: fixed;
+    /*position: absolute; */
+    /* 'absolute' would fixed this to nearest positioned ancestor */
+    /* but we want it to be fixed to the viewport */
+    bottom: 20px;
+    right: 20px;
     /* TODO need to fix this to bottom and right */
-
-    /* Incorrect position */
-    
 }
 
 .get-in-touch img {
