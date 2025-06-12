@@ -54,7 +54,7 @@ button {
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #188618;
 }
 
 /* Pseudo-elements for Email and Phone Labels */
@@ -88,5 +88,16 @@ a:active {
   color: rgb(241, 16, 8);
 }
 
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
 /* Add hover and visited states for the link */
 /* ::before pseudo-element for <h1> */
+
+.password-label::before {
+    content: "*"; /* Unicode for lock emoji */
+    margin-right: 5px;
+    color:red;
+}

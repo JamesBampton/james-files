@@ -15,10 +15,9 @@ header {
 
 /* Flexbox navigation */
 .navbar {
-    /* TODO: explain the purpose of the following properties */
+    /* This makes the navbar container flexible and will place contents in the center */
     display: flex;
-
-    justify-content: center;
+    justify-content: start;
     background-color: #007BFF;
     padding: 10px;
 }
@@ -38,10 +37,10 @@ header {
 /* Flexbox content area */
 .content {
     
-    /* TODO: explain the purpose of the following properties */
+    /* TODO: wrap content of the container once the container size shrinks*/
     flex-wrap: wrap;
     display: flex;
-
+    flex-wrap: wrap; /* added flex-wrap to wrap contents */
     justify-content: space-around;
     align-items: center;
     margin: 20px auto;
@@ -60,7 +59,8 @@ header {
     border-radius: 5px;
 
     /* TODO: explain the purpose of the following properties */
-    flex: 1 1 200px;
+    flex: 1 0 180px; /*flex-grow, flex-shrink, flex-basis */
+    /* This allows the box to grow and shrink, with a base width of 200px */
 }
 
 .box:hover {
