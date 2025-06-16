@@ -102,7 +102,8 @@ button {
     cursor: pointer;
 }
 
-/* TODO: describe what each of these rules do */
+
+
 @media screen and (min-width: 768px) {
     .products {
         padding: 40px;
@@ -110,6 +111,29 @@ button {
 
     .product {
         width: 300px;
+    }
+
+    .banner {
+        display: block;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+
+    #desktop-menu {
+        display: block;
+    }
+}
+
+/* Media query to implement the below styles when the scren size is less than 768 */
+@media screen and (min-width: 900px) {
+    .products {
+        padding: 40px;
+    }
+
+    .product {
+        width: 150px;
     }
 
     .banner {
