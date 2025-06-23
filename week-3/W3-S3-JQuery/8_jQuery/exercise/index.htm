@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery CSS Manipulation</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- TODO: Add in the jQuery script  -->>
+    <!-- TODO: Add in the jQuery script  -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -38,6 +38,11 @@
         <button class="btn">Italicize Text</button>
     </div>
 
+    <div class="box" id="boxy5">
+        <p class="text-element">Text 5</p>
+        <button class="btn">James Box of tricks</button>
+    </div>
+
     <script>
         $(document).ready(function () {
             // Change text color to red for the first box
@@ -46,8 +51,10 @@
             });
 
             // TODO: Increase font size for the second box
-            
-            
+            $('#box2').click(function () {
+                $('#box2').css('font-size', '24px');
+            });
+
             $('#box2').click(function () {
                 $('#box2').css('color', 'red');
             });
@@ -57,8 +64,20 @@
             });
 
             // TODO: Change background color for the third box
+            $('#box3').click(function () {
+                $('#box3').css('background-color', '#aaffff');
+            });
 
             // TODO: Italicize text for all the text elements
+            $('#box4').click(function () {
+                $('*').css('font-style', 'italic');
+            });
+
+            $('#boxy5').click(function () {
+                $('#boxy5').css('font-weight', 'bold');
+                $('btn').css('color', 'red');
+            });
+
 
 
         });
