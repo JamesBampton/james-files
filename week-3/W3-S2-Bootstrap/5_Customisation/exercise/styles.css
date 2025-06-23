@@ -1,1 +1,20 @@
 /* Custom Styles for overriding Bootstrap colors */
+.btn-primary {
+  background-color: white;
+  color: orange;
+  border-color: black;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: orange;
+  border-style: dashed;
+}
+
+.text-dark {
+  color: rgb(58, 167, 31) !important;
+}
+
+.bg-secondary {
+  color: pink !important;
+}
