@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First JavaScript</title>
 
     <!-- get started by adding your script tag here -->
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </head>
+
 <body>
-    <h1>Right Click and click Inspect, then click on Console to see your output</h1>
+    <h1>Click the buttoms to see output</h1>
+
+    <button onclick="myFunction()">My Name</button>
+    <p id="demo">I have change my name from Clive Onions to...</p>
+    <br>
+
+    <button onclick="myFunction2()">My Calculation</button>
+    <p id="demo2">This is what happends when you multiply 25 by 10</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        function myFunction() {
+
+            var firstName = "James";
+            var surName = "Bampton";
+            var result = firstName + " " + surName;
+            document.getElementById("demo").innerHTML = result;
+
+        }
+
+        function myFunction2() {
+
+            var num1 = 25;
+            var num2 = 10;
+            var result = num1 * num2;
+            document.getElementById("demo2").innerHTML = result;
+
+        }
+
+    </script>
 </body>
+
 </html>
