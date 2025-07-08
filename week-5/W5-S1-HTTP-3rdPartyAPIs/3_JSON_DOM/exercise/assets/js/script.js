@@ -32,7 +32,7 @@ const renderRepos = (repos) => {
   const reposListEl = document.getElementById("repos");
   let html = "";
 
-  //TODO what does this line do?
+  //TODO what does this line do? // Loops thorugh the repo and gets the  full name value and stores the value is a new list item in the DOM
   repos.forEach((repo) => {
     const repoFullName = repo.full_name;
 
@@ -45,7 +45,7 @@ const renderRepos = (repos) => {
 const renderRepos2 = (repos) => {
   const reposListEl = document.getElementById("repos2");
 
-  //TODO what does this line do?
+  //TODO what does this line do? Loops through the repos object for the length of the array and get the full name
   for (let i = 0; i < repos.length; i++) {
     const repoFullName = repos[i].full_name;
 

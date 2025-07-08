@@ -29,7 +29,10 @@ function onfetchRepos() {
 const renderRepos = (repos) => {
   // this loops through the data and logs the name of each repository
   repos.forEach((repo) => {
+    console.log()
     console.log(repo.full_name);
+    console.log(repo.private);
+    console.log(repo.owner.avatar_url)
 
     // this logs the name of each repository
     //TODO: log out the full name of each repository and whether it is a private or public repository
