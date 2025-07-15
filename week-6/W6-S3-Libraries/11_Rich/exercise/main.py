@@ -13,9 +13,24 @@ questions = [
 ]
 answers = prompt(questions)
 
+
+# Get user input with Inquirer
+questions2 = [
+    {"type": "input", "name": "song", "message": "What is your favourite Song?"},
+    {"type": "input", "name": "sport", "message": "What is your favorite Sport?"},
+]
+answers2 = prompt(questions2)
+
+
 # Display a formatted message with Rich
 console.print(
     f"Hello, [bold {answers['color']}] {answers['name']}![/bold {answers['color']}]",
+    style=answers["color"],
+)
+
+# Display a formatted message with Rich
+console.print(
+    f"Hello, [bold {answers2['song']}] {answers2['sport']}![/bold]",
     style=answers["color"],
 )
 

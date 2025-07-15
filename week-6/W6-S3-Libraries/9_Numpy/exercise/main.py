@@ -4,7 +4,7 @@ print("Welcome to NumPy Basics! Let's explore some common use cases.\n")
 
 # 1. Creating an Array
 print("Step 1: Creating an Array")
-numbers = np.array([5, 10, 15, 20, 25])
+numbers = np.array([30, 10, 15, 20, 25])
 print("Array:", numbers)
 
 # TODO: Try changing the numbers in the array above and re-run the script!
@@ -17,12 +17,16 @@ print("Mean (Average):", np.mean(numbers))
 print("Maximum Value:", np.max(numbers))
 print("Minimum Value:", np.min(numbers))
 
+
+numbers2 = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+print("Numbers2 array Sum:", np.sum(numbers2))
+print("Numbers2 array Mean (Average):", np.mean(numbers2))
 # TODO: Can you create another array and find its sum and mean?
 print("\n")
 
 # 3. Generating Random Numbers
 print("Step 3: Generating Random Numbers")
-random_numbers = np.random.randint(1, 50, size=5)  # 5 random numbers between 1 and 50
+random_numbers = np.random.randint(1, 3, size=5)  # 5 random numbers between 1 and 50 / Why does 1,3 only retnry 1-2
 print("Random Numbers:", random_numbers)
 
 # TODO: Try changing the range (e.g., 1-100) and size (e.g., 10) of the random numbers.
