@@ -8,7 +8,7 @@ const { v4: uuidv4 } = require("uuid");
 const app = express();
 
 // Define the port the server will listen on
-const PORT = 3001;
+const PORT = 3009;
 
 // Middleware to parse incoming JSON requests
 app.use(express.json());
@@ -32,7 +32,7 @@ const writeData = (data) => {
 
 // Handle GET request at the root route
 app.get("/", (req, res) => {
-  res.send("Welcome to the simple Express app!");
+  res.send("Welcome to my simple Express app!");
 });
 
 // Handle GET request to retrieve stored data
@@ -60,9 +60,33 @@ app.get("/data/:id", (req, res) => {
   res.json(item);
 });
 
-// TODO: Handle PUT request to update data by ID
 
-// TODO: Handle DELETE request to delete data by ID
+// TODO: Handle PUT request to update data by ID
+app.put("/data/:id", (req, res) => {
+  const data = readData();
+  const item = data.findIndex((item) => item.id === req.params.id);
+  if (index === -1) {
+    return res.status(404).json({ message: "Data not found" });
+  }
+
+  data[index] = { ...data[index], ...req.body};
+  writeData(data);
+  res.json({ message: "Data saved successfully", data: data[index] });
+});
+
+
+
+// TODO: Handle DELETE request to retrieve data by ID
+app.delete("/data/:id", (req, res) => {
+  const data = readData();
+  const item = data.find((item) => item.id === req.params.id);
+  if (!item) {
+    return res.status(404).json({ message: "Data not found" });
+  }
+
+  res.json(item);
+});
+
 
 // Handle POST request at the /echo route
 app.post("/echo", (req, res) => {

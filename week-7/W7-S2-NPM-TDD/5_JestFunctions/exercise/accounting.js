@@ -1,6 +1,6 @@
 // VAT Calculator.js
 
-function calculateGross(amount, vatPercentage = 0.2) {
+function calculateGross(amount, vatPercentage) {
   console.log("calculateGross", vatPercentage);
   if (typeof amount !== "number" || typeof vatPercentage !== "number") {
     throw new Error("Both amount and vatPercentage must be numbers");
