@@ -9,7 +9,7 @@ const routes = require("./routes");
 const app = express();
 app.use(bodyParser.json());
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3011;
 
 // has the --rebuild parameter been passed as a command line param?
 const rebuild = process.argv[2] === "--rebuild";

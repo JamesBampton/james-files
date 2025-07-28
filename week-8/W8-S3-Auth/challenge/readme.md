@@ -4,11 +4,11 @@
 
 This week, you've learned how to build a complete **back-end solution** with **CRUD operations** connected to a **MySQL database**. You've also explored how to interact with this backend using **API calls from a web page (front-end)**.
 
-Now, it's time to put your skills into practice and build your first **full stack application**!
+Now, it's time to put your skills into practice and build your first **backend application**!
 
 ### Your Task
 
-You will develop a **blogging platform** that allows users to:
+You will develop a REST API for a **blogging platform** that allows users to:
 
 - **Read** blog articles and filter them by categories.
 - **Register** and log in to manage their content.
@@ -26,7 +26,7 @@ Once completed, you will **deploy your application** to [Render](https://render.
 ## Key Learnings
 
 - Developing **CRUD operations** in a full stack application.
-- Connecting a **front-end** to a **Node.js/Express backend** with a **MySQL database**.
+- Running and testing a **Node.js/Express backend** with a **MySQL database** with Postman
 - Deploying a **full stack database-driven application** to **Render**.
 
 ## User Story
@@ -40,6 +40,8 @@ _As a user, I want to register and log in to a blogging platform so that I can c
 3. Blog posts should be **filtered by category** for easy navigation.
 4. The application should be **deployed** on [Render](https://render.com/) and accessible online.
 5. The front-end should interact with the API to **dynamically display and update** blog content.
+6. Instructions for running the application are included.
+7. A demo video of the script running is submitted.
 
 ## Getting Started
 

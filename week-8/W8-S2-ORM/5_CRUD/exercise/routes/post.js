@@ -35,25 +35,29 @@ app.get("/posts/:id", async (req, res) => {
 });
 
 // Route to update a post
-app.put("/posts/:id", async (req, res) => {
+app.put("/:id", async (req, res) => {
   try {
-    //TODO: destructuring the title, content, and postedBy from the request body
-    //TODO: update the post using the update method on the Post model
-    //TODO: return the updated post
+    const { title, content, postedBy } = req.body;
+    const post = await Post.update(
+      { title, content, postedBy },
+      { where: { id: req.params.id } }
+    );
+    res.json(post);
   } catch (error) {
     res.status(500).json({ error: "Error updating post" });
   }
 });
 
 // Route to delete a post
-app.delete("/posts/:id", async (req, res) => {
+app.delete("/:id", async (req, res) => {
   try {
-    //TODO: add delete logic here using the destroy method on the Post model
-    //TODO:return the updated post
+    const post = await Post.destroy({ where: { id: req.params.id } });
+    res.json(post);
   } catch (error) {
     res.status(500).json({ error: "Error deleting post" });
   }
 });
+
 
 // export the router
 module.exports = app;
